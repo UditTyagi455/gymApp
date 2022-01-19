@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {AiOutlineYoutube} from "react-icons/ai"
 import {FiFacebook} from "react-icons/fi"
 import {FiInstagram} from "react-icons/fi"
@@ -12,7 +13,7 @@ const Footer = () => {
          <footer className="container con-data bg-dark text-white p-5">
            <div className="row">
                <div className="col-lg-3">
-                   <h2 className="text-uppercase">the <span className="text-warning ">gym</span></h2>
+                   <Link to="/"><h2 className="text-uppercase">the <span className="text-warning ">gym</span></h2></Link>
                </div>
                <div className="col-lg-2 text-capitalize">
                    <p>Need help</p>

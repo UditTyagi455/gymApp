@@ -1,12 +1,13 @@
 import React from 'react';
 import "../App.css"
+import vid3 from "../video/vid3.mp4"
 
 const Body1 = () => {
     return (
     <>
      <div>
        <div className="slider">
-         
+       {/* <video src={vid3} controls autoplay muted loop id="video"/> */}
        
        <div className="image-text">
        <h1 className="text-white text-uppercase display-3 fw-bolder">The Best Fitness <br/> studio in town</h1>

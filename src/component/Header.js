@@ -25,13 +25,13 @@ const Header = () => {
           <Link className="nav-link active" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-white" aria-current="page" href="#">Services</a>
+          <Link className="nav-link text-white" to="/services">Services</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link text-white" to="/ourclasses">Our Classes</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-white" aria-current="page" href="#">About us</a>
+          <Link className="nav-link text-white" to="/about">About us</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link text-white" to="/blog">Quotes</Link>
@@ -40,7 +40,7 @@ const Header = () => {
           <Link className="nav-link text-white" to="/Pricing">Pricing</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-white" aria-current="page" href="#">Contact us</a>
+          <Link className="nav-link text-white" to="/contact">Contact us</Link>
         </li>
       </ul>
     </div>

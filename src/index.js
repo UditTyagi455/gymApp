@@ -8,6 +8,11 @@ import Blog from "./component/Blog"
 import NewComp from "./component/NewComp"
 import Pricing from './component/Pricing';
 import Form from "./component/Form"
+import About from "./component/Aboutus"
+import Services from "./component/Services";
+import Payment from "./component/Payment"
+import Contactus from "./component/Contactus"
+import Cong from "./component/Cong"
 
 const routing = (
   <Router>
@@ -19,6 +24,11 @@ const routing = (
       <Route path="/newcomp" component={NewComp}/>
       <Route path="/pricing" component={Pricing}/>
       <Route path="/form" component={Form}/>
+      <Route path="/about" component={About}/>
+      <Route path="/services" component={Services}/>
+      <Route path="/payment" component={Payment}/>
+      <Route path="/contact" component={Contactus}/>
+      <Route path="/cong" component={Cong}/>
     </Switch>
   </Router>
 )

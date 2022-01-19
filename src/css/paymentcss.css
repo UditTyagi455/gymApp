@@ -1,0 +1,39 @@
+.debitCard {
+    position: relative;
+}
+.submitData{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    opacity: 1;
+}
+.submitData2{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    opacity: 0;
+    transition: 2s ease-in;
+}
+.submitData span{
+    font-size: 14px;
+}
+
+.debitCard:hover {
+    /* background-color: #bbb; */
+}
+
+
+
+
+
+
+{/* after press the button  */}
+             
+/* <div className={`${opset ? "submitData": "submitData2"}`}>
+<span>Payment Succesful</span><br/>
+<span>Thanks for trying Stripe Elements.No money was charged,but we generated a Payment Method</span><br/>
+<span>pm_1He1ps2espdt3TlYdEslDCr</span>
+<span className="border border-2 ms-1"><FiRefreshCw/></span>
+</div> */
+
+{/* end after data */}

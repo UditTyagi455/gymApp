@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 import Header from "./Header";
 import "../Form.css"
 import Footer from "./Footer"
+import {BsDot} from "react-icons/bs";
+
 
 const Form = () => {
   const [userData, setUserData] = useState({
@@ -12,6 +15,7 @@ const Form = () => {
     address: "",
     message: "",
   });
+  const [payment,setPayment] =useState(false)
 
   let name, value;
   const postUserData = (event) => {
@@ -61,6 +65,7 @@ const Form = () => {
     } else {
       alert("plz fill the data");
     }
+    setPayment(true);
   };
 
 
@@ -73,6 +78,27 @@ const Form = () => {
        <h1 className="text-center display-3 text-uppercase text-white fw-bolder">Your <span className="text-warning">gym</span> membership</h1>
       </div>
        </div>
+
+       <div className="container mt-5">
+          <div className="row justify-content-md-center align-items-center fs-3">
+           <div className="col-lg-1 col-1 text-warning"><BsDot/></div>
+           <div className="col-lg-3 col-3"><hr style={{height: "3px"}}/></div>
+           <div className="col-lg-1 col-1"><BsDot/></div>
+           <div className="col-lg-3 col-3"><hr style={{height: "3px"}}/></div>
+           <div className="col-lg-1 col-1"><BsDot/></div>
+          </div>
+         </div>
+         <div className="container">
+          <div className="row justify-content-md-center align-items-center">
+           <div className="col-lg-1 col-1 ">personal details</div>
+           <div className="col-lg-3 col-3 "></div>
+           <div className="col-lg-1 col-1">Bank payment</div>
+           <div className="col-lg-3 col-3"></div>
+           <div className="col-lg-1 col-1">Membership Created</div>
+          </div>
+         </div>
+
+
        {/* Form start Here */}
        <section className="contactus-section">
         <div className="container">
@@ -190,12 +216,19 @@ const Form = () => {
                     </div>
               
                     <div className="row d-flex justify-content-center align-items-center flex-row">
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 col-4">
                     <button className="btn btn-primary w-100 disabled"> Back </button>
                     </div>
-                    <div className="col-lg-4">
-                      <button type="submit" className="btn btn-danger w-100" onClick={submitData}>Next</button>
+                    <div className="col-lg-4 col-4">
+                      {
+                        payment? <Link to="/payment"><button className="btn btn-primary w-100">Next </button></Link> : <Link to="/payment"><button className="btn btn-primary w-100" style={{opacity: "0"}}>Next </button></Link>
+                      }
+                    
                     </div>
+                    <div className="col-lg-4 col-4">
+                      <button type="submit" className="btn btn-danger w-100" onClick={submitData}>Submit</button>
+                    </div>
+                    
                     </div>
                   
                   </form>

@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import {AiFillCalendar} from "react-icons/ai";
 import { quotesApi } from '../Apidata/QuotesApi';
+import mypic from "../images/myimg2.jpg"
 
 const Blog = () => {
 
@@ -44,7 +45,7 @@ Some are from sports people, some entrepreneurs, world leaders and famous thinke
             </div>
                </div>
                <hr/>
-               <img src="./img/myimg2.jpg" alt="mypic" width="110rem" height="110rem" className="rounded-circle m-5"/>
+               <img src={mypic} alt="mypic" width="110rem" height="110rem" className="rounded-circle m-5"/>
                <span className="fs-3 fw-bolder"> Udit Tyagi</span>
              </div>
            </div>
